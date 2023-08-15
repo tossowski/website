@@ -55,6 +55,31 @@
             background-color: #333;
             color: white;
         }
+
+        /* Style for the image container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 600px;  */
+            gap: 0;
+        }
+
+        /* Style for the scaled image */
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            margin: 0;  
+        }
+
+ 
+
+        a {
+            text-decoration: none; /* Remove underline */
+            color: #3498db; /* Set link color to your desired color */
+        }
     </style>
 </head>
 <body>
@@ -62,7 +87,7 @@
         <div id="profile">
             
             <h1>Tim Ossowski</h1>
-            <img src="profile-picture.jpg" alt="Your Profile Picture">
+                <img src="profile.png" alt="Profile Pic" width="300" height="300">
             <div id="bio">
                 <p>Hi! I'm a PhD student in the Computer Science Department at the University of Wisconsin-Madison advised by Professor Junjie Hu. My research is focused on the intersection between vision and language. In particular, I am interested in learning high quality multimodal representations and multimodal retrieval. </p>
             </div>
@@ -83,9 +108,10 @@
         <section id="first-author">
             <h3>First Author</h3>
             <article class="publication">
-                <h4>Multimodal Prompt Retrieval for Generative Visual Question Answering <i>(ACL Findings 2023)</i></h4>
-                <img src="architecture.svg" alt="Publication Image" width="800" height="400">
-                
+                <a href="https://aclanthology.org/2023.findings-acl.158/"><h4>Multimodal Prompt Retrieval for Generative Visual Question Answering <i>(ACL Findings 2023)</i></h4></a>
+                <div class="image-container">
+                    <img src="architecture.svg" alt="Publication Image">
+                </div>
                 <p>We propose a novel generative model enhanced by multimodal prompt retrieval (MPR) that integrates retrieved prompts and multimodal features to generate answers in free text. Our generative model enables rapid zero-shot dataset adaptation to unseen data distributions and open-set answer labels across datasets. Our experiments on medical Visual Question Answering (VQA) tasks show that MPR outperforms its non-retrieval counterpart by up to 30% accuracy points in a few-shot domain adaptation setting</p>
                 <p><strong>Authors:</strong> Tim Ossowski, Junjie Hu</p>
             </article>
@@ -94,9 +120,11 @@
         <section id="other-publications">
             <h3>Other Publications</h3>
             <article class="publication">
-                <h4>Utilizing Language-Image Pretraining for Efficient and Robust Bilingual Word Alignment <i>(EMNLP Findings 2022)</i></h4>
-                <img src="walip.png" alt="Publication Image" width="800" height="400">
-                <p>We develop a novel Unsupervised Word Translation (UWT) method dubbed Word Alignment using Language-Image Pretraining (WALIP), leveraging visual observations via the shared imagetext embedding space of CLIPs (Radford et al., 2021). WALIP has a two-step procedure. First, we retrieve word pairs with high confidences of similarity, computed using our proposed image-based fingerprints, which define the initial pivot for the alignment. Second, we apply our robust Procrustes algorithm to estimate the linear mapping between two embedding spaces, which iteratively corrects and refines the estimated alignment. Our extensive experiments show that WALIP improves upon the state-of-the-art performance of bilingual word alignment for a few language pairs across different word embeddings and displays great robustness to the dissimilarity of language pairs or training corpora for two word embeddings.</p>
+                <a href="https://aclanthology.org/2022.findings-emnlp.12.pdf"><h4>Utilizing Language-Image Pretraining for Efficient and Robust Bilingual Word Alignment <i>(EMNLP Findings 2022)</i></h4></a>
+                <div class="image-container">
+                    <img src="walip.png" alt="Publication Image" width="600" height="300">
+                </div>
+                <p>We develop a novel Unsupervised Word Translation (UWT) method dubbed Word Alignment using Language-Image Pretraining (WALIP), leveraging visual observations via the shared image-text embedding space of <a href="https://openai.com/research/clip">CLIP models</a>. WALIP has a two-step procedure. First, we retrieve word pairs with high confidences of similarity, computed using our proposed image-based fingerprints, which define the initial pivot for the alignment. Second, we apply our robust Procrustes algorithm to estimate the linear mapping between two embedding spaces, which iteratively corrects and refines the estimated alignment. Our extensive experiments show that WALIP improves upon the state-of-the-art performance of bilingual word alignment for a few language pairs across different word embeddings and displays great robustness to the dissimilarity of language pairs or training corpora for two word embeddings.</p>
                 <p><strong>Authors:</strong> Tuan Dinh, Jy-yong Sohn, Shashank Rajput, Tim Ossowski, Yifei Ming, Junjie Hu, Dimitris Papailiopoulos, Kangwook Lee</p>
             </article>
         </section>  
@@ -104,6 +132,21 @@
 
     <section id="projects">
         <h2>Personal Projects</h2>
+        <article class="publication">
+            <a href="https://github.com/tossowski/CubicChunksMapViewer/tree/main"><h4>Cubic Chunks Map Viewer</i></h4></a>
+            <div class="image-container">
+                <img src="halfdome.png" alt="Half Dome Image" width="600" height="300">
+            </div>
+            <p>A program which allows any cubic chunks minecraft world to be rendered as an isometric interactive map. The picture above is generated from the halfdome region in California of the terra 1 to 1 mod. Working on a version which allows any 3d model to be converted to a map. </p>
+        </article>
+
+        <article class="publication">
+            <a href="https://tossowski.github.io/VoxelDex/"><h4>VoxelDex</i></h4></a>
+            <div class="image-container">
+                <img src="bulbasaur.png" alt="Bulbasaur Image" width="600" height="300">
+            </div>
+            <p>Using the cubic chunks map viewer, I rendered a collection of all generation 1 pokemon. More details on the project page</p>
+        </article>
         <!-- Add your personal project content here -->
     </section>
 
