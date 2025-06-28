@@ -4,95 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Ossowski</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
-        /* Add blue background to each section */
-        section {
-            background-color: #d9d9d9; /* Change to your preferred blue color */
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            border-radius: 5px;
-        }
-
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-            margin: 0 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        #bio {
-            padding: 30px
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        /* Style for the image container */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 600px;  */
-            gap: 0;
-        }
-
-        /* Style for the scaled image */
-        .image-container img {
-            max-width: 100%;
-            max-height: 100%;
-            /* width: auto;
-            height: auto; */
-            margin: 0;  
-        }
-
-        h1, h2, h3, h4 {
-            font-size: 30px;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none; /* Remove underline */
-            color: #3498db; /* Set link color to your desired color */
-        }
-
-        article {
-            border: 4px solid black;
-            background-color:rgb(255, 255, 255);
-            padding: 1%;
-            margin: 1%;
-        }
-
-
-
     </style>
 </head>
 <body>
@@ -102,7 +18,7 @@
             <h1>Tim Ossowski</h1>
                 <img src="images/profile.png" width="30%" alt="Profile Pic">
             <div id="bio">
-                <p>Hi! I'm a PhD student in the Computer Science Department at the University of Wisconsin-Madison advised by Professor Junjie Hu. My research is focused on the intersection between vision and language. In particular, I am interested in learning high quality multimodal representations and multimodal retrieval.<br><br>I also like making <a href="#projects">things that look cool 😊</a> </p>
+                <p>Hi! I'm a PhD student in the Computer Science Department at the University of Wisconsin-Madison advised by Professor Junjie Hu. My research is focused on the intersection between computer vision and natural language processing. In particular, I am interested in multimodal retrieval, MLLMs for biomedicine, and LLM agents. I have also interned with the Health Futures team at Microsoft research, where I worked on developing multimodal biomedical foundation models.<br><br>I also like making <a href="#projects">things that look cool 😊</a> </p>
             </div>
            
         </div>
@@ -247,8 +163,17 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/tim-ossowski-bb07a0171/" target="_blank" rel="noopener noreferrer">Tim Ossowski</a></p>
     </section>
 
+    <div style="position: relative; display: flex; justify-content: center;">
+        <div id="clustrmaps-container">
+                <script type="text/javascript" id="clstr_globe"
+                src="//clustrmaps.com/globe.js?d=U_0xYTxLUEXBT-nMXRGelhxaGo39c_Em5IobaptLNMQ">
+                </script>
+            <!-- <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;"></div> -->
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Tim Ossowski. All rights reserved.</p>
+        <p>&copy; 2025 Tim Ossowski. All rights reserved.</p>
     </footer>
 </body>
 </html>
