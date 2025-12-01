@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
     </style>
 </head>
@@ -16,7 +17,7 @@
         <div id="profile">
             
             <h1>Tim Ossowski</h1>
-                <img src="images/profile.png" width="30%" alt="Profile Pic">
+                <img src="images/profile.png" width="20%" alt="Profile Pic">
             <div id="bio">
                 <p>Hi! I'm a PhD student in the Computer Science Department at the University of Wisconsin-Madison advised by Professor Junjie Hu. My research is focused on the intersection between computer vision and natural language processing. In particular, I am interested in multimodal retrieval, MLLMs for biomedicine, and LLM agents. I have also interned with the Health Futures team at Microsoft research, where I worked on developing multimodal biomedical foundation models.<br><br>I also like making <a href="#projects">things that look cool 😊</a> </p>
             </div>
@@ -39,53 +40,99 @@
         <section id="first-author">
 
             <article class="publication">
-                <p class="paper-title"><a href="https://openreview.net/pdf?id=TIGQIem1na"><h4>COMMA: A Communicative Multimodal Multi-Agent Benchmark (TMLR 2025)</h4></a></p>
+                
                 <div class="image-container">
-                    <img width="80%" src="images/agents.jpg" alt="Publication Image">
+                    <div style="display: flex; align-items: center;">
+                        <img src="images/OctoMed.png" alt="OctoMed Icon" style="height: 5em; margin-right: 0.5em;">
+                        <p class="paper-title">
+                            <a href="https://openreview.net/pdf?id=TIGQIem1na">
+                                <h4 style="display: inline;">OctoMed: Data Recipes for State-of-the-Art Multimodal Medical Reasoning (Under Review)</h4>
+                            </a>
+                        </p>
+                    </div>
                 </div>
+                <p class="pub-links">
+                    <a href="https://openreview.net/pdf?id=TIGQIem1na" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://valiant-helmet-a30.notion.site/OctoMed-Data-Recipes-for-State-of-the-art-Multimodal-Medical-Reasoning-2b21be22fc9580d6bcc0e418905eb3f6?source=copy_link" target="_blank" rel="noopener noreferrer" title="Blog"><i class="fas fa-blog"></i> Blog</a>
+                    <a href="https://huggingface.co/OctoMed/OctoMed-7B" target="_blank" rel="noopener noreferrer" title="Hugging Face Model">🤗 Model</a>
+                </p>
+                <div class="image-container">
+                    <img width="80%" src="images/data_dist_arxiv.svg" alt="Publication Image">
+                </div>
+                <p>High-quality medical data is essential for building reliable medical AI systems. In this work, we explore how careful data curation and supervised fine-tuning can significantly improve multimodal medical reasoning. We introduce a scalable data recipe that distills structured reasoning traces, resulting in the largest multimodal medical reasoning dataset of over 8 million reasoning traces and 6.8 billion response tokens. We then trained Qwen2.5-VL-7B-Instruct on this data to produce OctoMed, a state-of-the-art open-source model that performs robustly across a wide range of out-of-distribution benchmarks.</p>
+                <p>Authors: <strong>Tim Ossowski</strong>, Sheng Zhang, Qianchu Liu, Guanghui Qin, Reuben Tan, Tristan Naumann, Junjie Hu, Hoifung Poon</p>
+                
+            </article>
+
+
+            <article class="publication">
+                <p class="paper-title"><a href="https://openreview.net/pdf?id=TIGQIem1na"><h4>COMMA: A Communicative Multimodal Multi-Agent Benchmark (TMLR 2025)</h4></a></p>
+                <p class="pub-links">
+                    <a href="https://openreview.net/pdf?id=TIGQIem1na" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/tossowski/COMMA" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                </p>
+                <div class="image-container">
+                    <img width="70%" src="images/agents.jpg" alt="Publication Image">
+                </div>
+                
                 <p>We introduce a novel benchmark designed to evaluate the collaborative performance of multimodal multi-agent systems through language communication. Our benchmark features a variety of scenarios, providing a comprehensive evaluation across four key categories of agentic capability in a communicative collaboration setting. By testing both agent-agent and agent-human collaborations using open-source and closed-source models, our findings reveal surprising weaknesses in state-of-theart models, including proprietary models like GPT-4o. These models struggle to outperform even a simple random agent baseline in agent-agent collaboration and only surpass the random baseline when a human is involved</p>
-                <p><strong>Authors:</strong> Tim Ossowski, Danyal Maqbool, Jixuan Chen, Zefan Cai, Tyler Bradshaw, Junjie Hu</p>
+                <p>Authors: <strong>Tim Ossowski</strong>, Danyal Maqbool, Jixuan Chen, Zefan Cai, Tyler Bradshaw, Junjie Hu</p>
+                
             </article>
 
             <article class="publication">
                 <p class="paper-title"><a href="https://aclanthology.org/2024.acl-long.282.pdf"><h4>Object Level In-Context Visual Embeddings (OLIVE) (ACL 2024)</h4></a></p>
+                <p class="pub-links">
+                    <a href="https://aclanthology.org/2024.acl-long.282.pdf" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/tossowski/Olive" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                </p>
                 <div class="image-container">
-                    <video width="80%" controls>
+                    <video width="60%" controls>
                         <source src="videos/OLIVE_Demo_Extended_Final.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                  </div>
                 <p>We propose a lightweight object encoder that can be connected to existing LLMs to enable controllable object level multimodal reasoning with free-form input annotations. Our model omits image patch features and summarizes object features into a single vector, significantly reducing context length for more efficient training and inference, and allowing for in-context examples from multiple images. We conduct extensive experiments with region retrieval of object level features and showcase rapid adaptation to unseen visual concepts.</p>
-                <p><strong>Authors:</strong> Tim Ossowski, Junjie Hu</p>
+                <p>Authors: <strong>Tim Ossowski</strong>, Junjie Hu</p>
             </article>
             
 
             <article class="publication">
                 <a href="https://arxiv.org/pdf/2404.03558"><h4>How does Multi-Task Training Affect Transformer In-Context Capabilities? Investigations with Function Classes<i> (NAACL 2024)</i></h4></a>
+                <p class="pub-links">
+                    <a href="https://arxiv.org/pdf/2404.03558" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                </p>
                 <div class="image-container">
-                    <img width="80%" src="images/naacl.png" alt="Publication Image">
+                    <img width="60%" src="images/naacl.png" alt="Publication Image">
                 </div>
                 <p>In this work, we investigate the combination of multi-task learning (MTL) with in-context learning (ICL) to build models that efficiently learn tasks while being robust to out-of-distribution examples. Our findings suggest the existence of retrospective heads, within which each input token has a high attention score to the previous input token. Masking these heads results in dramatically decreased in-context capability, whereas masking other heads has little to no effect (shown above). We also propose several effective curriculum learning strategies that allow ICL models to achieve higher data efficiency and more stable convergence.  </p>
-                <p><strong>Authors:</strong> Harmon Bhasin, Tim Ossowski, Yiqiao Zhong, Junjie Hu</p>
+                <p>Authors: Harmon Bhasin, <strong>Tim Ossowski</strong>, Yiqiao Zhong, Junjie Hu</p>
             </article>
 
             <article class="publication">
                 <a href="https://aclanthology.org/2023.findings-acl.158/"><h4>Multimodal Prompt Retrieval for Generative Visual Question Answering <i>(ACL Findings 2023)</i></h4></a>
+                <p class="pub-links">
+                    <a href="https://aclanthology.org/2023.findings-acl.158/" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/tossowski/MultimodalPromptRetrieval" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                </p>
                 <div class="image-container">
-                    <img width="80%" src="images/architecture.svg" alt="Publication Image">
+                    <img width="70%" src="images/architecture.svg" alt="Publication Image">
                 </div>
                 <p>We propose a novel generative model enhanced by multimodal prompt retrieval (MPR) that integrates retrieved prompts and multimodal features to generate answers in free text. Our generative model enables rapid zero-shot dataset adaptation to unseen data distributions and open-set answer labels across datasets. Our experiments on medical Visual Question Answering (VQA) tasks show that MPR outperforms its non-retrieval counterpart by up to 30% accuracy points in a few-shot domain adaptation setting</p>
-                <p><strong>Authors:</strong> Tim Ossowski, Junjie Hu</p>
+                <p>Authors: <strong>Tim Ossowski</strong>, Junjie Hu</p>
             </article>
 
 
             <article class="publication">
                 <a href="https://aclanthology.org/2022.findings-emnlp.12.pdf"><h4>Utilizing Language-Image Pretraining for Efficient and Robust Bilingual Word Alignment <i>(EMNLP Findings 2022)</i></h4></a>
+                <p class="pub-links">
+                    <a href="https://aclanthology.org/2022.findings-emnlp.12.pdf" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-pdf"></i> Paper</a>
+                </p>
                 <div class="image-container">
-                    <img width="80%" src="images/walip.png" alt="Publication Image" width="600" height="300">
+                    <img width="60%" src="images/walip.png" alt="Publication Image">
                 </div>
                 <p>We develop a novel Unsupervised Word Translation (UWT) method dubbed Word Alignment using Language-Image Pretraining (WALIP), leveraging visual observations via the shared image-text embedding space of <a href="https://openai.com/research/clip">CLIP models</a>. WALIP has a two-step procedure. First, we retrieve word pairs with high confidences of similarity, computed using our proposed image-based fingerprints, which define the initial pivot for the alignment. Second, we apply our robust Procrustes algorithm to estimate the linear mapping between two embedding spaces, which iteratively corrects and refines the estimated alignment. Our extensive experiments show that WALIP improves upon the state-of-the-art performance of bilingual word alignment for a few language pairs across different word embeddings and displays great robustness to the dissimilarity of language pairs or training corpora for two word embeddings.</p>
-                <p><strong>Authors:</strong> Tuan Dinh, Jy-yong Sohn, Shashank Rajput, Tim Ossowski, Yifei Ming, Junjie Hu, Dimitris Papailiopoulos, Kangwook Lee</p>
+                <p>Authors: Tuan Dinh, Jy-yong Sohn, Shashank Rajput, <strong>Tim Ossowski</strong>, Yifei Ming, Junjie Hu, Dimitris Papailiopoulos, Kangwook Lee</p>
             </article>
         </section>
 
